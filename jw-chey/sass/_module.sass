@@ -1,0 +1,86 @@
+body
+  +bckgclr(#f1ede1)
+
+body.new
+  +bckgclr(#4b5764)
+
+.flex
+  @extend %flex
+  +flex-dir(column)
+  +flex-wrap(nowrap)
+  +flex-pack(start)
+  +flex-justify(flex-start)
+  +flex-align(center)
+
+.space
+  margin: em(8) 0
+
+#list
+  .checked
+    @extend %grey
+    &:after
+      content: ' ✓'
+  .done
+    @extend %grey
+    text-decoration: line-through
+
+
+#item
+  border: 0
+  padding: 0 em(8)
+  width: 58%
+  height: em(36)
+  margin: em(8) 0
+  &:focus
+    outline: 0
+    background-color: $light-green
+    color: $teal
+
+label, input
+  display: block
+
+label
+  input
+    width: em(320)
+    height: em(32)
+    font-size: em(20)
+
+h1
+  width: em(208)
+  line-height: em(36)
+  background-color: #7bccf9
+  text:
+    align: center
+    transform: uppercase
+  font-family: sans-serif
+  vertical-align: middle
+  color: #fff
+  border-radius: em(4)
+
+ul
+  border-top: 1px solid #dedede
+  width: 70%
+  padding: em(32)
+
+li
+  @extend %listuff
+  +box-shad($teal, #ffdc00)
+
+li.new
+  @extend %listuff
+  +box-shad(#b094e2, #f6925a)
+
+.submit
+  margin: em(24) 0
+  +border-rad(12)
+  width: em(208)
+  height: em(48)
+  box-shadow: em(0)
+  color: white
+  background-color: $teal
+  border: 0
+  font-size: em(16)
+  text-transform: Uppercase
+  outline: none
+  &:hover
+    background-color: #1b8e87
