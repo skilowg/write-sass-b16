@@ -1,0 +1,41 @@
+=bckgclr($clr)
+  background-color: $clr
+
+=flex-dir($dir)
+  -webkit-flex-direction: $dir
+  -ms-flex-direction: $dir
+  flex-direction: $dir
+
+=flex-wrap($wrap)
+  -webkit-flex-wrap: $wrap
+  -ms-flex-wrap: $wrap
+  flex-wrap: $wrap
+
+=flex-pack($pos)
+  -webkit-box-pack: $pos
+  -moz-box-pack: $pos
+  -ms-flex-pack: $pos
+  -ms-flex-line-pack: $pos
+
+=flex-justify($pos)
+  -webkit-justify-content: $pos
+  justify-content: $pos
+  -webkit-align-content: $pos
+  align-content: $pos
+
+=flex-align($al)
+  -webkit-box-align: $al
+  -moz-box-align: $al
+  -webkit-align-items: $al
+  -ms-flex-align: $al
+  align-items: $al
+
+=border-rad($px)
+  -webkit-border-radius: em($px)
+  -moz-border-radius: em($px)
+  border-radius: em($px)
+
+=box-shad($shad, $shad-h)
+  box-shadow: 0 3px 0 $shad
+  &:hover
+    box-shadow: 0 3px 0 $shad-h
